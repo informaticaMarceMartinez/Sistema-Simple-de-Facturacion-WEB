@@ -1,0 +1,221 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0%;
+    margin-top: 0%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #032f04;
+    color: rgb(255, 255, 255);
+    padding: 0.3rem;
+    padding-right: 20px;
+    margin: 0%;
+    margin-top: 0%;
+    text-align: right;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    margin-right: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 20px;    
+
+    background: white;
+    padding: 20px;
+
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8); 
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    border: none; /* Elimina el borde por defecto */
+    height: 2px; /* Grosor de la línea */
+    background-color: #4CAF50; /* Color de la línea */
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.titulosInline {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 10px;
+    
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#numero { width: 30%;}
+#fecha { width: 30%; }
+
+.item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.item .subtotal {
+    min-width: 80px;
+    text-align: right;
+}
+
+.descripcion {width: 60%;}
+.cantidad {width: 10%;}
+.precio {width: 20%;}
+.iva {width: 10%;}
+
+.eliminar-item {
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 2px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -12px 9px 12px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: -9px 7px 9px -4px rgba(0,0,0,0.75);
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #4CAF50;
+}
+
+
+/* Agrego cambios para los dispositivos de pantallas menores a 500px   */
+/* =================================================================== */
+
+@media (max-width: 850px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        max-width: 80%;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(31, 73, 125, 0.4);
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+        width: 90%;
+    }
+
+    #numero, #fecha {
+        width: 45%;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item input,
+    .item select {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 5px;
+        align-items: center;
+        align-content: center;
+    }
+
+    button {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .total {
+        text-align: right;
+    }
+}
